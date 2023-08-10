@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.7ed4c445.css",
+    "main.js": "/react-portfolio/static/js/main.6fc0d0c4.js",
+    "static/media/image6.jpg": "/react-portfolio/static/media/image6.d815fbd7656922980117.jpg",
+    "static/media/image1.jpg": "/react-portfolio/static/media/image1.e5cc538181c31600f0ed.jpg",
+    "static/media/image2.jpg": "/react-portfolio/static/media/image2.918e02fdfb4b98994a41.jpg",
+    "static/media/image5.jpg": "/react-portfolio/static/media/image5.064bdceb43980a252529.jpg",
+    "static/media/image4.jpg": "/react-portfolio/static/media/image4.0208209b2b8700cd8699.jpg",
+    "static/media/earth.jpg": "/react-portfolio/static/media/earth.a08c82a61f5bf923991e.jpg",
+    "static/media/image3.jpg": "/react-portfolio/static/media/image3.dab09f293ac8980aaa0d.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/react-portfolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/ionicons.svg?v=2.0.0": "/react-portfolio/static/media/ionicons.b45d332f6829d6813600.svg",
+    "static/media/ionicons.ttf?v=2.0.0": "/react-portfolio/static/media/ionicons.1fa6a1e8581aaedf7344.ttf",
+    "static/media/fontawesome-webfont.eot": "/react-portfolio/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/react-portfolio/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/ionicons.eot?v=2.0.0": "/react-portfolio/static/media/ionicons.68e3a4f9a8d8c679b4ae.eot",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/react-portfolio/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/react-portfolio/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/ionicons.woff?v=2.0.0": "/react-portfolio/static/media/ionicons.0b4ad6170d93c4aa91ee.woff",
+    "static/media/male1.png": "/react-portfolio/static/media/male1.33b5179ebc3ff05be62d.png",
+    "static/media/myImage.png": "/react-portfolio/static/media/myImage.d37bb1c946c59794414c.png",
+    "static/media/male.png": "/react-portfolio/static/media/male.cadeca2c10c5f440ffa7.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.7ed4c445.css.map": "/react-portfolio/static/css/main.7ed4c445.css.map",
+    "main.6fc0d0c4.js.map": "/react-portfolio/static/js/main.6fc0d0c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ed4c445.css",
+    "static/js/main.6fc0d0c4.js"
+  ]
+}
