@@ -14,16 +14,12 @@ class Intro extends React.Component {
         <div className="intro-content display-table">
           <div className="table-cell">
             <div className="container">
-              <h1 className="intro-title mb-4">Hello, I am XYZ</h1>
+              <h1 className="intro-title mb-4"> - 전성호 - </h1>
               <p className="intro-subtitle">
                 <span className="text-slider-items"></span>
                 <strong className="text-slider">
                   <Typed
-                    strings={[
-                      "Front End Developer",
-                      "Back End Developer",
-                      "Software Engineer"
-                    ]}
+                    strings={["Front end 개발자", "Back end 개발자"]}
                     typeSpeed={80}
                     backDelay={1100}
                     backSpeed={30}
@@ -33,12 +29,13 @@ class Intro extends React.Component {
               </p>
               <p className="pt-3">
                 <a
-                  className="btn btn-primary btn js-scroll px-4"
-                  href="#work"
+                  className="btn btn-primary btn js-scroll px-3"
+                  href="#aboutme"
                   role="button"
                 >
-                  View My Work
+                  더 알아보기 ↓
                 </a>
+                <icon></icon>
               </p>
             </div>
           </div>

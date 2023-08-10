@@ -11,7 +11,7 @@ import stock5 from "../img/image6.jpg";
 class Portfolio extends React.Component {
   render() {
     return (
-      <section id="work" className="portfolio-mf sect-pt4 route">
+      <section id="skills" className="portfolio-mf sect-pt4 route">
         <div className="container">
           <div className="row">
             <div className="col-sm-12">

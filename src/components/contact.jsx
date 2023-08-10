@@ -13,7 +13,7 @@ class Contact extends React.Component {
           <div className="row">
             <div className="col-sm-12">
               <div className="contact-mf">
-                <div id="contact" className="box-shadow-full">
+                <div id="projects" className="box-shadow-full">
                   <div className="row">
                     <div className="col-md-6">
                       <div className="title-box-2">
@@ -163,8 +163,7 @@ class Contact extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-12">
-                <div className="copyright-box">
-                </div>
+                <div className="copyright-box"></div>
               </div>
             </div>
           </div>
