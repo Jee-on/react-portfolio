@@ -1,21 +1,22 @@
 {
-  "name": "portfolio",
+  "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://jee-on.github.io/react-portfolio/",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "gh-pages": "^2.2.0",
+    "gh-pages": "^5.0.0",
     "jquery": "^3.4.1",
-    "lightbox2": "^2.11.0",
-    "node-sass": "^4.12.0",
+    "lightbox2": "^2.11.4",
+    "node-sass": "^7.0.3",
     "normalize.css": "^8.0.1",
-    "popper.js": "^1.15.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "^3.3.0",
-    "react-typed": "^1.1.2",
-    "typed.js": "^2.0.10"
+    "popper.js": "^1.16.1",
+    "prettier": "^3.0.1",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-scripts": "5.0.1",
+    "react-typed": "^1.2.0",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -26,7 +27,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
