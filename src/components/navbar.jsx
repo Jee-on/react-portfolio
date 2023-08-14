@@ -1,8 +1,9 @@
-import React from "react";
 import $ from "jquery";
+import React from "react";
 
-import logo1 from "../img/male1.png";
+import { IoLogoReact } from "react-icons/io5";
 import logo2 from "../img/male.png";
+import logo1 from "../img/male1.png";
 
 class Navbar extends React.Component {
   constructor() {
@@ -33,34 +34,23 @@ class Navbar extends React.Component {
 
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 50) {
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.add("navbar-reduce");
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.remove("navbar-trans");
+        document.querySelector(".navbar-expand-md").classList.add("navbar-reduce");
+        document.querySelector(".navbar-expand-md").classList.remove("navbar-trans");
         this.setState({ logo: logo2 });
       } else {
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.add("navbar-trans");
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.remove("navbar-reduce");
+        document.querySelector(".navbar-expand-md").classList.add("navbar-trans");
+        document.querySelector(".navbar-expand-md").classList.remove("navbar-reduce");
         this.setState({ logo: logo1 });
       }
     });
 
     $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
       if (
-        window.location.pathname.replace(/^\//, "") ===
-          this.pathname.replace(/^\//, "") &&
+        window.location.pathname.replace(/^\//, "") === this.pathname.replace(/^\//, "") &&
         window.location.hostname === this.hostname
       ) {
         var target = $(this.hash);
-        target = target.length
-          ? target
-          : $("[name=" + this.hash.slice(1) + "]");
+        target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
         if (target.length) {
           $("html, body").animate(
             {
@@ -81,53 +71,43 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav
-        className="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
-        id="mainNav"
-      >
-        <div className="container">
-          <a className="navbar-brand js-scroll" href="#page-top">
-            <img
-              src={this.state.logo}
-              alt="logo"
-              style={{ maxWidth: "100px" }}
-            />
+      <nav className='navbar navbar-b navbar-trans navbar-expand-md fixed-top' id='mainNav'>
+        <div className='container'>
+          <a className='navbar-brand js-scroll' href='#page-top'>
+            <IoLogoReact size={35} style={{ marginRight: 7 }} color='5ac9f1' />
+            JSH's Portfolio
           </a>
           <button
-            className="navbar-toggler collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarDefault"
-            aria-controls="navbarDefault"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            className='navbar-toggler collapsed'
+            type='button'
+            data-toggle='collapse'
+            data-target='#navbarDefault'
+            aria-controls='navbarDefault'
+            aria-expanded='false'
+            aria-label='Toggle navigation'>
             <span></span>
             <span></span>
             <span></span>
           </button>
-          <div
-            className="navbar-collapse collapse justify-content-end"
-            id="navbarDefault"
-          >
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link js-scroll active" href="#intro">
+          <div className='navbar-collapse collapse justify-content-end' id='navbarDefault'>
+            <ul className='navbar-nav'>
+              <li className='nav-item'>
+                <a className='nav-link js-scroll active' href='#intro'>
                   Intro
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#aboutme">
+              <li className='nav-item'>
+                <a className='nav-link js-scroll' href='#aboutme'>
                   About me
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#skills">
+              <li className='nav-item'>
+                <a className='nav-link js-scroll' href='#skills'>
                   Skills
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#projects">
+              <li className='nav-item'>
+                <a className='nav-link js-scroll' href='#projects'>
                   Projects
                 </a>
               </li>
