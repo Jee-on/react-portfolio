@@ -15,7 +15,7 @@ class Intro extends React.Component {
         <div id='stars3' />
 
         <div className='intro-content display-table'>
-          <div className='table-cell'>
+          <div className='table-cell' style={{ position: "relative" }}>
             <div className='container'>
               <h2 className='intro-title mb-4'> 전성호 </h2>
               <h3 className='intro-title2 mb-4'> 웹 개발자 포트폴리오 </h3>
@@ -37,10 +37,11 @@ class Intro extends React.Component {
                   href='#aboutme'
                   role='button'
                   style={{ fontSize: "1.2rem", fontFamily: "Pretendard" }}>
-                  더 알아보기 <FaAngleDoubleDown />
+                  더 알아보기
                 </a>
               </p>
             </div>
+            <FaAngleDoubleDown class='ani' size='30' style={{ position: "absolute", bottom: 15 }} />
           </div>
         </div>
       </div>

@@ -1,17 +1,31 @@
 /* Add By Jee-on */
 
-.pagetitle {
-  /* General */
-  font-weight: 900;
-  margin-bottom: 0;
-}
-
 .aboutcard-title {
-  font-weight: 900;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 .aboutcard-content {
   font-weight: 400;
-  opacity: 0.8;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.ani {
+  display: inline-block;
+  animation: fadeUpDown 1.5s infinite;
+}
+
+.carouselPrev {
+  color: white;
+  font-size: 40px;
+  display: inline-block;
+  animation: fadeRightLeft 1.5s infinite;
+}
+.carouselNext {
+  color: white;
+  font-size: 40px;
+  display: inline-block;
+  animation: fadeLeftRight 1.5s infinite;
 }
 
 @media screen and (min-width: 1200px) {
@@ -19,26 +33,17 @@
   .pagetitle {
     font-size: 3rem;
   }
-  .aboutcard {
-    font-size: 1.2rem;
-  }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   /* md */
   .pagetitle {
     font-size: 3rem;
   }
-  .aboutcard {
-    font-size: 1.2rem;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /* sm  */
   .pagetitle {
     font-size: 2.7rem;
-  }
-  .aboutcard {
-    font-size: 1.2rem;
   }
 }
 
@@ -47,8 +52,8 @@
   .pagetitle {
     font-size: 2.4rem;
   }
-  .aboutcard {
-    font-size: 1.2em;
+  .aboutcard-content {
+    font-size: 1.2rem;
   }
 }
 
@@ -92,10 +97,6 @@ section {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-}
-body {
-  background-color: #f5f5f5 !important;
-  color: #4e4e4e !important;
 }
 
 h1,
@@ -214,7 +215,7 @@ a:hover {
 }
 
 .sect-mt4 {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 /* Title S */
