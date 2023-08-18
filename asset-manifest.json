@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.b78d3c93.css",
-    "main.js": "/react-portfolio/static/js/main.cd1205c7.js",
+    "main.js": "/react-portfolio/static/js/main.c3c51c01.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/react-portfolio/static/media/fontawesome-webfont.6878d55e3615ccf40c38.svg",
     "static/media/ionicons.svg?v=2.0.0": "/react-portfolio/static/media/ionicons.ee5b17dfd3f2d12ff4e2.svg",
     "static/media/pic6.png": "/react-portfolio/static/media/pic6.2d70efe37b80a2971785.png",
@@ -31,6 +31,7 @@
     "static/media/mui.png": "/react-portfolio/static/media/mui.555e93a5f7a0c65c61a4.png",
     "static/media/pic9.png": "/react-portfolio/static/media/pic9.f4aa0c7d67f198105dd6.png",
     "static/media/pic8.png": "/react-portfolio/static/media/pic8.2dc08a130e09dc1364de.png",
+    "static/media/wig.png": "/react-portfolio/static/media/wig.8b0912ff0a397821e629.png",
     "static/media/maria.png": "/react-portfolio/static/media/maria.cd4b307d580b7d3c3352.png",
     "static/media/react.png": "/react-portfolio/static/media/react.cfee98e8a372d8a0f6b4.png",
     "static/media/oracle.png": "/react-portfolio/static/media/oracle.c2b6ad693c0957606307.png",
@@ -40,10 +41,10 @@
     "static/media/ubuntu.png": "/react-portfolio/static/media/ubuntu.d8062b10fa190a7986ea.png",
     "index.html": "/react-portfolio/index.html",
     "main.b78d3c93.css.map": "/react-portfolio/static/css/main.b78d3c93.css.map",
-    "main.cd1205c7.js.map": "/react-portfolio/static/js/main.cd1205c7.js.map"
+    "main.c3c51c01.js.map": "/react-portfolio/static/js/main.c3c51c01.js.map"
   },
   "entrypoints": [
     "static/css/main.b78d3c93.css",
-    "static/js/main.cd1205c7.js"
+    "static/js/main.c3c51c01.js"
   ]
 }
