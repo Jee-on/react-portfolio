@@ -1,10 +1,10 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import React from "react";
 import PageHeader from "./custom/PageHeader";
 
 /* projects */
-import Portfolio from "./project/portfolio";
 import Mokkoji from "./project/mokkoji";
+import Portfolio from "./project/portfolio";
 
 function Projects() {
   return (

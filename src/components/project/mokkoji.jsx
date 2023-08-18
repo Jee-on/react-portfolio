@@ -27,7 +27,7 @@ const items = {
     " 팀을 만들 수 있는 팀 매칭 커뮤니티 입니다.",
   content2:
     "React 와 SpringBoot 기반으로 만들어진 웹 사이트 입니다. 개발 기간의 많은 시간을 공부에 할애 하면서 진행한 프로젝트 이기도 합니다. " +
-    " Redux를 이용한 전역 상태관리와 Redux-persist 미들웨어와 Local Storage를 이용한 로그인 상태 관리를 배우기도 했고, backend 에서는" +
+    " Redux 를 이용한 전역 상태관리와 Redux-persist 미들웨어와 Local Storage 를 이용한 로그인 상태 관리를 배우기도 했고, backend 에서는" +
     " Database 및 JPA Hibernate 의 효율, 효과적인 사용을 위해 QueryDSL 을 적용하거나 객체간 매핑을 위한 MapStruct 를 도입하기도 했습니다." +
     " 배포는 Linux 기반 Ubuntu 를 이용해 AWS EC2 를 이용했고, backend 는 SpringBoot 의 내장 Tomcat 으로, frontend 는 Nginx 를 통해 backend 와 연동하여 배포를 하였습니다.",
   function:
@@ -112,8 +112,8 @@ export default function Mokkoji() {
                   margin: 0,
                 },
               }}
-              PrevIcon={<MdOutlineKeyboardDoubleArrowLeft class='carouselPrev' />}
-              NextIcon={<MdOutlineKeyboardDoubleArrowRight class='carouselNext' />}>
+              PrevIcon={<MdOutlineKeyboardDoubleArrowLeft class='carouselPrev fa-globe' />}
+              NextIcon={<MdOutlineKeyboardDoubleArrowRight class='carouselNext fa-globe' />}>
               {crousel
                 ? crousel.map((data) => (
                     <>
@@ -122,90 +122,90 @@ export default function Mokkoji() {
                   ))
                 : ""}
             </Carousel>
-          </Grid>
-          <Grid
-            container
-            item
-            lg={12}
-            md={12}
-            sm={12}
-            xs={12}
-            pt={3}
-            pl={{ lg: 7, md: 1, sm: 10, xs: 2 }}
-            pr={{ lg: 7, md: 1, sm: 10, xs: 2 }}
-            spacing={{ lg: 3, md: 3, sm: 2, xs: 2 }}>
-            {/* liveDemo */}
-            {items.liveDemoUrl ? (
-              <Grid item lg={6} md={6} sm={6} xs={12}>
-                <Button
-                  href={items.liveDemoUrl}
-                  target='_blank'
-                  variant='contained'
-                  sx={{
-                    bgcolor: "primary",
-                    height: 45,
-                    minWidth: 170,
-                    maxWidth: 240,
-                    textTransform: "none",
-                    ":hover": { color: "primary", bgcolor: "white", opacity: 0.8 },
-                  }}
-                  startIcon={<BiLink size={30} />}>
-                  {"\u00A0"}
-                  {"\u00A0"}
-                  <Typography fontSize={18} fontWeight={500}>
-                    Live Demo
-                  </Typography>
-                </Button>
-              </Grid>
-            ) : null}
-            {/* siteUrl */}
-            {items.siteUrl ? (
-              <Grid item lg={6} md={6} sm={6} xs={12}>
-                <Button
-                  href={items.siteUrl}
-                  target='_blank'
-                  variant='contained'
-                  sx={{
-                    bgcolor: "primary",
-                    height: 45,
-                    minWidth: 170,
-                    maxWidth: 240,
-                    textTransform: "none",
-                    ":hover": { color: "primary", bgcolor: "white", opacity: 0.8 },
-                  }}
-                  startIcon={<BiLink size={30} />}>
-                  {"\u00A0"}
-                  {"\u00A0"}
-                  <Typography fontSize={18} fontWeight={500}>
-                    Live Web
-                  </Typography>
-                </Button>
-              </Grid>
-            ) : null}
-            {/* githubUrl */}
-            {items.githubUrl ? (
-              <Grid item lg={6} md={6} sm={6} xs={12}>
-                <Button
-                  href={items.githubUrl}
-                  target='_blank'
-                  variant='contained'
-                  sx={{
-                    bgcolor: "#24292e",
-                    height: 45,
-                    minWidth: 170,
-                    maxWidth: 240,
-                    textTransform: "none",
-                    ":hover": { color: "black", bgcolor: "white", opacity: 0.8 },
-                  }}
-                  startIcon={<FaGithub size={30} />}>
-                  {"\u00A0"}
-                  {"\u00A0"}
-                  <Typography fontSize={18} fontWeight={500}>
-                    GitHub
-                  </Typography>
-                </Button>
-              </Grid>
-            ) : null}
+            <Grid
+              container
+              item
+              lg={12}
+              md={12}
+              sm={12}
+              xs={12}
+              pt={3}
+              pl={{ lg: 7, md: 1, sm: 10, xs: 2 }}
+              pr={{ lg: 7, md: 1, sm: 10, xs: 2 }}
+              spacing={{ lg: 3, md: 3, sm: 2, xs: 2 }}>
+              {/* liveDemo */}
+              {items.liveDemoUrl ? (
+                <Grid item lg={6} md={6} sm={6} xs={12}>
+                  <Button
+                    href={items.liveDemoUrl}
+                    target='_blank'
+                    variant='contained'
+                    sx={{
+                      bgcolor: "primary",
+                      height: 45,
+                      minWidth: 170,
+                      maxWidth: 240,
+                      textTransform: "none",
+                      ":hover": { color: "primary", bgcolor: "white", opacity: 0.8 },
+                    }}
+                    startIcon={<BiLink size={30} />}>
+                    {"\u00A0"}
+                    {"\u00A0"}
+                    <Typography fontSize={18} fontWeight={500}>
+                      Live Demo
+                    </Typography>
+                  </Button>
+                </Grid>
+              ) : null}
+              {/* siteUrl */}
+              {items.siteUrl ? (
+                <Grid item lg={6} md={6} sm={6} xs={12}>
+                  <Button
+                    href={items.siteUrl}
+                    target='_blank'
+                    variant='contained'
+                    sx={{
+                      bgcolor: "primary",
+                      height: 45,
+                      minWidth: 170,
+                      maxWidth: 240,
+                      textTransform: "none",
+                      ":hover": { color: "primary", bgcolor: "white", opacity: 0.8 },
+                    }}
+                    startIcon={<BiLink size={30} />}>
+                    {"\u00A0"}
+                    {"\u00A0"}
+                    <Typography fontSize={18} fontWeight={500}>
+                      Live Web
+                    </Typography>
+                  </Button>
+                </Grid>
+              ) : null}
+              {/* githubUrl */}
+              {items.githubUrl ? (
+                <Grid item lg={6} md={6} sm={6} xs={12}>
+                  <Button
+                    href={items.githubUrl}
+                    target='_blank'
+                    variant='contained'
+                    sx={{
+                      bgcolor: "#24292e",
+                      height: 45,
+                      minWidth: 170,
+                      maxWidth: 240,
+                      textTransform: "none",
+                      ":hover": { color: "black", bgcolor: "white", opacity: 0.8 },
+                    }}
+                    startIcon={<FaGithub size={30} />}>
+                    {"\u00A0"}
+                    {"\u00A0"}
+                    <Typography fontSize={18} fontWeight={500}>
+                      GitHub
+                    </Typography>
+                  </Button>
+                </Grid>
+              ) : null}
+            </Grid>
           </Grid>
         </Grid>
 

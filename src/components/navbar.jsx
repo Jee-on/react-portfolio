@@ -2,17 +2,8 @@ import $ from "jquery";
 import React from "react";
 
 import { IoLogoReact } from "react-icons/io5";
-import logo2 from "../img/male.png";
-import logo1 from "../img/male1.png";
 
 class Navbar extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      logo: logo1,
-    };
-  }
-
   componentDidMount() {
     const nav = $("nav");
     let navHeight = nav.outerHeight();
@@ -36,11 +27,11 @@ class Navbar extends React.Component {
       if (window.pageYOffset > 50) {
         document.querySelector(".navbar-expand-md").classList.add("navbar-reduce");
         document.querySelector(".navbar-expand-md").classList.remove("navbar-trans");
-        this.setState({ logo: logo2 });
+        this.setState({});
       } else {
         document.querySelector(".navbar-expand-md").classList.add("navbar-trans");
         document.querySelector(".navbar-expand-md").classList.remove("navbar-reduce");
-        this.setState({ logo: logo1 });
+        this.setState({});
       }
     });
 

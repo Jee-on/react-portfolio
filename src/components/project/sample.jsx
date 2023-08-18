@@ -68,8 +68,8 @@ export default function Portfolio() {
                   margin: 0,
                 },
               }}
-              PrevIcon={<MdOutlineKeyboardDoubleArrowLeft class='carouselPrev' />}
-              NextIcon={<MdOutlineKeyboardDoubleArrowRight class='carouselNext' />}>
+              PrevIcon={<MdOutlineKeyboardDoubleArrowLeft class='carouselPrev' fa-globe />}
+              NextIcon={<MdOutlineKeyboardDoubleArrowRight class='carouselNext' fa-globe />}>
               {crousel
                 ? crousel.map((data) => (
                     <>
@@ -78,90 +78,90 @@ export default function Portfolio() {
                   ))
                 : ""}
             </Carousel>
-          </Grid>
-          <Grid
-            container
-            item
-            lg={12}
-            md={12}
-            sm={12}
-            xs={12}
-            pt={3}
-            pl={{ lg: 7, md: 1, sm: 10, xs: 2 }}
-            pr={{ lg: 7, md: 1, sm: 10, xs: 2 }}
-            spacing={{ lg: 3, md: 3, sm: 2, xs: 2 }}>
-            {/* liveDemo */}
-            {items.liveDemoUrl ? (
-              <Grid item lg={6} md={6} sm={6} xs={12}>
-                <Button
-                  href={items.liveDemoUrl}
-                  target='_blank'
-                  variant='contained'
-                  sx={{
-                    bgcolor: "primary",
-                    height: 45,
-                    minWidth: 170,
-                    maxWidth: 240,
-                    textTransform: "none",
-                    ":hover": { color: "primary", bgcolor: "white", opacity: 0.8 },
-                  }}
-                  startIcon={<BiLink size={30} />}>
-                  {"\u00A0"}
-                  {"\u00A0"}
-                  <Typography fontSize={18} fontWeight={500}>
-                    Live Demo
-                  </Typography>
-                </Button>
-              </Grid>
-            ) : null}
-            {/* siteUrl */}
-            {items.siteUrl ? (
-              <Grid item lg={6} md={6} sm={6} xs={12}>
-                <Button
-                  href={items.siteUrl}
-                  target='_blank'
-                  variant='contained'
-                  sx={{
-                    bgcolor: "primary",
-                    height: 45,
-                    minWidth: 170,
-                    maxWidth: 240,
-                    textTransform: "none",
-                    ":hover": { color: "primary", bgcolor: "white", opacity: 0.8 },
-                  }}
-                  startIcon={<BiLink size={30} />}>
-                  {"\u00A0"}
-                  {"\u00A0"}
-                  <Typography fontSize={18} fontWeight={500}>
-                    Live Web
-                  </Typography>
-                </Button>
-              </Grid>
-            ) : null}
-            {/* githubUrl */}
-            {items.githubUrl ? (
-              <Grid item lg={6} md={6} sm={6} xs={12}>
-                <Button
-                  href={items.githubUrl}
-                  target='_blank'
-                  variant='contained'
-                  sx={{
-                    bgcolor: "#24292e",
-                    height: 45,
-                    minWidth: 170,
-                    maxWidth: 240,
-                    textTransform: "none",
-                    ":hover": { color: "black", bgcolor: "white", opacity: 0.8 },
-                  }}
-                  startIcon={<FaGithub size={30} />}>
-                  {"\u00A0"}
-                  {"\u00A0"}
-                  <Typography fontSize={18} fontWeight={500}>
-                    Github
-                  </Typography>
-                </Button>
-              </Grid>
-            ) : null}
+            <Grid
+              container
+              item
+              lg={12}
+              md={12}
+              sm={12}
+              xs={12}
+              pt={3}
+              pl={{ lg: 7, md: 1, sm: 10, xs: 2 }}
+              pr={{ lg: 7, md: 1, sm: 10, xs: 2 }}
+              spacing={{ lg: 3, md: 3, sm: 2, xs: 2 }}>
+              {/* liveDemo */}
+              {items.liveDemoUrl ? (
+                <Grid item lg={6} md={6} sm={6} xs={12}>
+                  <Button
+                    href={items.liveDemoUrl}
+                    target='_blank'
+                    variant='contained'
+                    sx={{
+                      bgcolor: "primary",
+                      height: 45,
+                      minWidth: 170,
+                      maxWidth: 240,
+                      textTransform: "none",
+                      ":hover": { color: "primary", bgcolor: "white", opacity: 0.8 },
+                    }}
+                    startIcon={<BiLink size={30} />}>
+                    {"\u00A0"}
+                    {"\u00A0"}
+                    <Typography fontSize={18} fontWeight={500}>
+                      Live Demo
+                    </Typography>
+                  </Button>
+                </Grid>
+              ) : null}
+              {/* siteUrl */}
+              {items.siteUrl ? (
+                <Grid item lg={6} md={6} sm={6} xs={12}>
+                  <Button
+                    href={items.siteUrl}
+                    target='_blank'
+                    variant='contained'
+                    sx={{
+                      bgcolor: "primary",
+                      height: 45,
+                      minWidth: 170,
+                      maxWidth: 240,
+                      textTransform: "none",
+                      ":hover": { color: "primary", bgcolor: "white", opacity: 0.8 },
+                    }}
+                    startIcon={<BiLink size={30} />}>
+                    {"\u00A0"}
+                    {"\u00A0"}
+                    <Typography fontSize={18} fontWeight={500}>
+                      Live Web
+                    </Typography>
+                  </Button>
+                </Grid>
+              ) : null}
+              {/* githubUrl */}
+              {items.githubUrl ? (
+                <Grid item lg={6} md={6} sm={6} xs={12}>
+                  <Button
+                    href={items.githubUrl}
+                    target='_blank'
+                    variant='contained'
+                    sx={{
+                      bgcolor: "#24292e",
+                      height: 45,
+                      minWidth: 170,
+                      maxWidth: 240,
+                      textTransform: "none",
+                      ":hover": { color: "black", bgcolor: "white", opacity: 0.8 },
+                    }}
+                    startIcon={<FaGithub size={30} />}>
+                    {"\u00A0"}
+                    {"\u00A0"}
+                    <Typography fontSize={18} fontWeight={500}>
+                      Github
+                    </Typography>
+                  </Button>
+                </Grid>
+              ) : null}
+            </Grid>
           </Grid>
         </Grid>
 

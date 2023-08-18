@@ -28,6 +28,10 @@
   animation: fadeLeftRight 1.5s infinite;
 }
 
+.fa-globe {
+  filter: drop-shadow(2px 2px 2px black);
+}
+
 @media screen and (min-width: 1200px) {
   /* lg */
   .pagetitle {
