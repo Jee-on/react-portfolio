@@ -26,6 +26,8 @@ import Intro from "./components/intro.jsx";
 import Aboutme from "./components/aboutme.jsx";
 import Skills from "./components/skills.jsx";
 import Projects from "./components/projects.jsx";
+import Storage from "./components/storage.jsx";
+import Career from "./components/career.jsx";
 import Footer from "./components/footer";
 
 import BackToTop from "./components/back-top.jsx";
@@ -47,6 +49,8 @@ ReactDOM.render(
       <Aboutme />
       <Skills />
       <Projects />
+      <Storage />
+      <Career />
       <Footer />
       <BackToTop />
       <Preloader />
@@ -55,7 +59,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();

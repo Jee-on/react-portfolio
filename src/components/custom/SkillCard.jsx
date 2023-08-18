@@ -1,5 +1,5 @@
+import { Box, Card, Divider, Stack, Typography } from "@mui/material";
 import React from "react";
-import { Card, Typography, Icon, Stack, Grid, Box, Divider } from "@mui/material";
 
 export default function SkillCard({ datas }) {
   return (

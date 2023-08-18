@@ -1,6 +1,5 @@
+import { Grid, Typography } from "@mui/material";
 import React from "react";
-import { Grid, Typography, Stack, Card, Paper, Divider } from "@mui/material";
-import { PiLinkBold } from "react-icons/pi";
 import { FaBirthdayCake, FaMapMarkerAlt, FaUserAstronaut } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import PageHeader from "./custom/PageHeader";

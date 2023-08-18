@@ -1,9 +1,8 @@
 import React from "react";
 import "./stars.scss";
 
-import Typed from "react-typed";
-import { Button } from "@mui/material";
 import { FaAngleDoubleDown } from "react-icons/fa";
+import Typed from "react-typed";
 
 class Intro extends React.Component {
   render() {

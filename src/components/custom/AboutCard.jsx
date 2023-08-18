@@ -1,6 +1,5 @@
+import { Card, Grid, Icon, Stack, Typography } from "@mui/material";
 import React from "react";
-import { Card, Typography, Icon, Stack, Grid, Box } from "@mui/material";
-import Typed from "react-typed";
 
 export default function AboutCard({ icon, title, content }) {
   return (
@@ -15,18 +14,7 @@ export default function AboutCard({ icon, title, content }) {
             justifyContent: "center",
             alignItems: "center",
           }}>
-          <Stack
-            direction='row'
-            spacing={
-              {
-                /* xs: 3,
-          sm: 3,
-          md: 3,
-          lg: 2, */
-              }
-            }
-            alignItems='center'>
-            {/* <Box sx={{ sm: 5, xs: 5 }} display={{ lg: "none", md: "none" }}></Box> */}
+          <Stack direction='row' spacing={{}} alignItems='center'>
             <Icon component={icon} className='aboutcard' sx={{ fontSize: 35, mr: 3.5 }} />
             <Stack dirction='column' spacing={1} justifyContent={"center"}>
               <Typography class='aboutcard aboutcard-title'>{title}</Typography>
