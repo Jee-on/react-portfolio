@@ -11,7 +11,13 @@ function Skills() {
       <div id='stars' />
       <div id='stars2' />
       <div id='stars3' />
-      <Grid container alignItems='center' justifyContent='center' direction='column'>
+      <Grid
+        container
+        alignItems='center'
+        justifyContent='center'
+        direction='column'
+        pr={{ xl: 40, lg: 10, md: 1 }}
+        pl={{ xl: 40, lg: 10, md: 1 }}>
         <Grid item xs={12} sm={12} md={12} lg={12} justifyContent={"center"}>
           <PageHeader title='SKILLS' tag='skills' color='white' />
         </Grid>
