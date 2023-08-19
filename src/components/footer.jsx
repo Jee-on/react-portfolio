@@ -1,8 +1,8 @@
-import { Box, Grid, Typography, Stack, Link } from "@mui/material";
+import { Box, Link, Stack, Typography } from "@mui/material";
 import React from "react";
+import { BsInstagram } from "react-icons/bs";
 import { FaBlog } from "react-icons/fa";
 import { VscGithub } from "react-icons/vsc";
-import { BsInstagram } from "react-icons/bs";
 
 function Footer() {
   return (

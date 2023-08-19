@@ -1,7 +1,7 @@
+import { Box, Grid } from "@mui/material";
 import React from "react";
-import { Box, Grid, Stack, Typography, Link } from "@mui/material";
-import PageHeader from "./custom/PageHeader";
 import wig from "../img/wig.png";
+import PageHeader from "./custom/PageHeader";
 
 const Career = () => {
   return (
