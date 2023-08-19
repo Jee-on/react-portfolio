@@ -28,7 +28,7 @@ export default function StorageCard({ data }) {
         {data.list
           ? data.list.map((item) => (
               <Stack direction={"row"} alignItems={"center"}>
-                <BsDash fontSize={18} fontWeight={500} />
+                <BsDash style={{ fontSize: 18, minWidth: "6%" }} align='left' />
                 <Typography fontSize={18} fontWeight={500} align='left'>
                   {item}
                 </Typography>
