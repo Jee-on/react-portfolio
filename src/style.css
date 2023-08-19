@@ -1,15 +1,5 @@
 /* Add By Jee-on */
 
-.aboutcard-title {
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-.aboutcard-content {
-  font-weight: 400;
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
-
 .ani {
   display: inline-block;
   animation: fadeUpDown 1.5s infinite;
