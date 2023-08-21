@@ -9,7 +9,7 @@ export default function PageHeader({ title, tag, color }) {
         <a href={`#${tag}`}>
           <PiLinkBold className='pagetitle' size={32} color='grey' />
         </a>
-        <Typography variant='h3' fontWeight={700} color={color ? color : "black"}>
+        <Typography variant='h3' fontFamily={"TheJamsil"} fontWeight={700} color={color ? color : "black"}>
           {title}
         </Typography>
       </Stack>
