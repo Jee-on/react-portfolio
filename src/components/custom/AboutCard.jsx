@@ -1,4 +1,4 @@
-import { Card, Grid, Icon, Stack, Typography } from "@mui/material";
+import { Card, Grid, Icon, Stack, Typography, Link } from "@mui/material";
 import React from "react";
 
 export default function AboutCard({ icon, title, content }) {
@@ -23,9 +23,17 @@ export default function AboutCard({ icon, title, content }) {
         <Typography fontSize={24} fontWeight={600}>
           {title}
         </Typography>
-        <Typography fontSize={20} fontWeight={600} sx={{ opacity: 0.8 }}>
-          {content}
-        </Typography>
+        {title === "이메일" ? (
+          <Typography fontSize={20} fontWeight={600} sx={{ opacity: 0.8 }}>
+            <Link href='mailto:tjdgh3586@gmail.com' underline='hover'>
+              {content}
+            </Link>
+          </Typography>
+        ) : (
+          <Typography fontSize={20} fontWeight={600} sx={{ opacity: 0.8 }}>
+            {content}
+          </Typography>
+        )}
       </Stack>
     </Card>
   );

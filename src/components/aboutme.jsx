@@ -36,7 +36,7 @@ function Aboutme() {
               <AboutCard icon={FaUserAstronaut} title='이름' content='전성호' />
               <AboutCard icon={FaMapMarkerAlt} title='주소지' content='서울특별시 금천구' />
               <AboutCard icon={FaBirthdayCake} title='생년월일' content='91.09.12' />
-              <AboutCard icon={MdEmail} title='이메일' content='tjdgh3586@gmail.com' />
+              <AboutCard icon={MdEmail} title='이메일' content='tjdgh3586@gmail.com' link='tjdgh3586@gmail.com' />
             </Stack>
           </Grid>
         </Grid>
