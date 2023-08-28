@@ -17,6 +17,7 @@ import "popper.js/dist/popper.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "./libs/easing.js";
 import "lightbox2/dist/js/lightbox.min.js";
+import ReactGA from "react-ga";
 
 import * as serviceWorker from "./serviceWorker";
 
@@ -34,6 +35,9 @@ import BackToTop from "./components/back-top.jsx";
 import Preloader from "./components/preloader";
 
 import { createTheme, ThemeProvider } from "@mui/material";
+
+const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID;
+ReactGA.initialize(TRACKING_ID);
 
 const theme = createTheme({
   typography: {
