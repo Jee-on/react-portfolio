@@ -37,7 +37,8 @@ import Preloader from "./components/preloader";
 import { createTheme, ThemeProvider } from "@mui/material";
 
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID;
-ReactGA.initialize(TRACKING_ID);
+ReactGA.initialize(TRACKING_ID, { debug: true });
+ReactGA.pageview(window.location.pathname);
 
 const theme = createTheme({
   typography: {
