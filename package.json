@@ -21,6 +21,7 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-ga": "^3.3.1",
+    "react-ga4": "^2.1.0",
     "react-icons": "^4.10.1",
     "react-material-ui-carousel": "^3.4.2",
     "react-scripts": "5.0.1",
