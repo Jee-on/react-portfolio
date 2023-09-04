@@ -37,7 +37,7 @@ const items = {
   backend: "SpringBoot, Python, MyBatis, Hibernate, Querydsl, MapStruct ",
   database: "MariaDB",
   deployment: "Nginx, AWS EC2",
-  githubUrl: "",
+  githubUrl: "https://gist.github.com/Jee-on/6a676c8a59e20244258109ed247cb67f",
   liveDemoUrl: "http://ec2-3-35-190-8.ap-northeast-2.compute.amazonaws.com",
   siteUrl: "",
   readMeUrl: "",
