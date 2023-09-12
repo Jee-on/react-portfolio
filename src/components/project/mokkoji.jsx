@@ -29,7 +29,8 @@ const items = {
     "React 와 SpringBoot 기반으로 만들어진 웹 사이트 입니다. 개발 기간의 많은 시간을 공부에 할애 하면서 진행한 프로젝트 이기도 합니다. " +
     " Redux 를 이용한 전역 상태관리와 Redux-persist 미들웨어와 Local Storage 를 이용한 로그인 상태 관리를 배우기도 했고, backend 에서는" +
     " Database 및 JPA Hibernate 의 효율, 효과적인 사용을 위해 QueryDSL 을 적용하거나 객체간 매핑을 위한 MapStruct 를 도입하기도 했습니다." +
-    " 배포는 Linux 기반 Ubuntu 를 이용해 AWS EC2 를 이용했고, backend 는 SpringBoot 의 내장 Tomcat 으로, frontend 는 Nginx 를 통해 backend 와 연동하여 배포를 하였습니다.",
+    " 배포는 AWS EC2에서 Linux기반 Ubuntu 환경으로 배포하였고, backend 는 SpringBoot 의 내장 Tomcat 으로, frontend 는 Nginx 를 통해 backend 와 연동하여 배포를 하였습니다.",
+  update1: "2023.09.13 - 홈페이지 투어기능 추가, 관리자 권한 계정 로그인 상태 유지",
   function:
     "팀 개설 및 가입, 팀 뉴스피드, 댓글, 대댓글, 사진 업로드, 알림, 카테고리로 팀 분류, API 회원가입, " +
     " 회원관리, 팀 관리, 통계, 이벤트 관리, 쪽지",
@@ -373,6 +374,22 @@ export default function Mokkoji() {
             <Typography mt={2} fontSize={17} fontWeight={500} align='left'>
               {items.content2
                 ? items.content2.split(" ").map((word, index) => (
+                    <span
+                      key={index}
+                      style={{
+                        color: /[a-zA-Z]/.test(word) ? "#DB3D43" : "inherit", // 영어인 글자만 색상을 다르게 지정
+                      }}>
+                      {word}{" "}
+                    </span>
+                  ))
+                : null}
+            </Typography>
+            <Typography mt={2} fontSize={20} fontWeight={600} align='left'>
+              [업데이트]
+            </Typography>
+            <Typography mt={0} fontSize={17} fontWeight={500} align='left'>
+              {items.update1
+                ? items.update1.split(" ").map((word, index) => (
                     <span
                       key={index}
                       style={{
