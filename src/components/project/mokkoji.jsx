@@ -30,7 +30,7 @@ const items = {
     " Redux 를 이용한 전역 상태관리와 Redux-persist 미들웨어와 Local Storage 를 이용한 로그인 상태 관리를 배우기도 했고, backend 에서는" +
     " Database 및 JPA Hibernate 의 효율, 효과적인 사용을 위해 QueryDSL 을 적용하거나 객체간 매핑을 위한 MapStruct 를 도입하기도 했습니다." +
     " 배포는 AWS EC2에서 Linux기반 Ubuntu 환경으로 배포하였고, backend 는 SpringBoot 의 내장 Tomcat 으로, frontend 는 Nginx 를 통해 backend 와 연동하여 배포를 하였습니다.",
-  update1: "2023.09.13 - 홈페이지 투어기능 추가, 관리자 권한 계정 로그인 상태 유지",
+  update1: "2023.09.13 - 홈페이지 투어기능 추가, 관리자 권한 부여 된 투어 계정 로그인 상태 유지",
   function:
     "팀 개설 및 가입, 팀 뉴스피드, 댓글, 대댓글, 사진 업로드, 알림, 카테고리로 팀 분류, API 회원가입, " +
     " 회원관리, 팀 관리, 통계, 이벤트 관리, 쪽지",
