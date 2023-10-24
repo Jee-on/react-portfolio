@@ -19,7 +19,8 @@ function Aboutme() {
             <Typography fontWeight={600} fontSize={20} maxWidth={490} sx={{ opacity: 0.9 }}>
               안녕하세요. <br />
               끊임 없이 도전하는 웹 개발자 입니다. <br />
-              새로운 트렌드의 기술, 언어를 습득하는 것을 즐기고 꼼꼼한 일 처리가 저의 장점 입니다.
+              새로운 트렌드의 기술, 언어를 습득하는 것을 즐기고 <br />
+              꼼꼼한 일 처리가 저의 장점 입니다. <br />
               <br />
             </Typography>
           </Grid>

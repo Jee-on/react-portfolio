@@ -38,6 +38,7 @@ import { createTheme, ThemeProvider } from "@mui/material";
 
 const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID;
 
+// @ts-ignore
 ReactGA.initialize(TRACKING_ID);
 ReactGA.set({ page: window.location.pathname });
 ReactGA.send("pageview");
