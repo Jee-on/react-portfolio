@@ -2,8 +2,9 @@ import { Box, Grid } from "@mui/material";
 import React from "react";
 import wig from "../img/wig.png";
 import PageHeader from "./custom/PageHeader";
+import {CareerCard} from "./career";
 
-const Career = () => {
+const CareerPage = () => {
   return (
     <Box
       id='career'
@@ -14,12 +15,11 @@ const Career = () => {
         <Grid item xs={12} sm={12} md={12} lg={12} pb={4} alignSelf={"center"}>
           <PageHeader title={"CAREER"} tag='career' color='black' />
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={12} pb={4} mt={4} align='center'>
+        <Grid item xs={12} sm={12} md={12} lg={12} pb={4} mt={4} >
           <Box component={"img"} src={wig} sx={{ opacity: 0.8, width: "100%", maxWidth: 250 }}></Box>
         </Grid>
       </Grid>
     </Box>
   );
 };
-
-export default Career;
+export default CareerPage;

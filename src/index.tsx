@@ -28,7 +28,7 @@ import Aboutme from "./components/aboutme.jsx";
 import Skills from "./components/skills.jsx";
 import Projects from "./components/projects.jsx";
 import Storage from "./components/storage.jsx";
-import Career from "./components/career.jsx";
+import CareerSec from "./components/careerPage";
 import Footer from "./components/footer";
 
 import BackToTop from "./components/back-top.jsx";
@@ -58,7 +58,7 @@ ReactDOM.render(
       <Skills />
       <Projects />
       <Storage />
-      <Career />
+      <CareerSec />
       <Footer />
       <BackToTop />
       <Preloader />
