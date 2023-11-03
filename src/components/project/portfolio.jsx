@@ -40,7 +40,7 @@ const crousel = [{
 },];
 
 export default function Portfolio() {
-    return (<Card
+    return <Card
         sx={{
             pb: 5, maxWidth: 1100, boxShadow: 10, borderRadius: 4, transition: "transform 0.2s", "&:hover": {
                 transform: "scale(1.02)",
@@ -57,7 +57,7 @@ export default function Portfolio() {
         <Grid container p={{lg: 4, md: 3, sm: 2, xs: 1}} spacing={3}>
             <Grid container item lg={6} md={6} sm={12} xs={12}>
                 <Grid item lg={12} md={12} sm={12} xs={12}>
-                    {/* 캐러셀  */}
+                    {/* carousel  */}
                     <Carousel
                         cycleNavigation={true}
                         navButtonsAlwaysVisible={true}
@@ -70,9 +70,9 @@ export default function Portfolio() {
                         }}
                         PrevIcon={<MdOutlineKeyboardDoubleArrowLeft class='carouselPrev fa-globe'/>}
                         NextIcon={<MdOutlineKeyboardDoubleArrowRight class='carouselNext fa-globe'/>}>
-                        {crousel ? crousel.map((data) => (<>
+                        {crousel ? crousel.map((data) => <>
                             <Box component='img' src={data.url} maxWidth='100%' boxShadow={5}/>
-                        </>)) : ""}
+                        </>) : ""}
                     </Carousel>
                     <Grid
                         container
@@ -86,7 +86,7 @@ export default function Portfolio() {
                         pr={{lg: 7, md: 1, sm: 10, xs: 2}}
                         spacing={{lg: 3, md: 3, sm: 2, xs: 2}}>
                         {/* liveDemo */}
-                        {items.liveDemoUrl ? (<Grid item lg={6} md={6} sm={6} xs={12}>
+                        {items.liveDemoUrl ? <Grid item lg={6} md={6} sm={6} xs={12}>
                             <Button
                                 href={items.liveDemoUrl}
                                 target='_blank'
@@ -106,9 +106,9 @@ export default function Portfolio() {
                                     Live Demo
                                 </Typography>
                             </Button>
-                        </Grid>) : null}
+                        </Grid> : null}
                         {/* siteUrl */}
-                        {items.siteUrl ? (<Grid item lg={6} md={6} sm={6} xs={12}>
+                        {items.siteUrl ? <Grid item lg={6} md={6} sm={6} xs={12}>
                             <Button
                                 href={items.siteUrl}
                                 target='_blank'
@@ -128,9 +128,9 @@ export default function Portfolio() {
                                     Live Web
                                 </Typography>
                             </Button>
-                        </Grid>) : null}
+                        </Grid> : null}
                         {/* githubUrl */}
-                        {items.githubUrl ? (<Grid item lg={6} md={6} sm={6} xs={12}>
+                        {items.githubUrl ? <Grid item lg={6} md={6} sm={6} xs={12}>
                             <Button
                                 href={items.githubUrl}
                                 target='_blank'
@@ -150,7 +150,7 @@ export default function Portfolio() {
                                     GitHub
                                 </Typography>
                             </Button>
-                        </Grid>) : null}
+                        </Grid> : null}
                     </Grid>
                 </Grid>
             </Grid>
@@ -160,7 +160,7 @@ export default function Portfolio() {
                 <Grid item lg={12} md={12} sm={12} xs={12} mb={2} pl={2}>
                     <Stack direction={"column"} spacing={3}>
                         {/* 주요기능 */}
-                        {items.function ? (<Stack direction={{sm: "row", xs: "column"}} spacing={0}>
+                        {items.function ? <Stack direction={{sm: "row", xs: "column"}} spacing={0}>
                             <Stack direction={"row"} minWidth={150} spacing={1}>
                                 <FaCheckSquare size={24} color='#1F4CA1'/>
                                 <Typography fontWeight={700} fontSize={18}>
@@ -171,10 +171,10 @@ export default function Portfolio() {
                                         sx={{wordBreak: "break-all"}}>
                                 {items.function}
                             </Typography>
-                        </Stack>) : null}
+                        </Stack> : null}
 
                         {/* frontend */}
-                        {items.frontend ? (<Stack direction={{sm: "row", xs: "column"}} spacing={0}>
+                        {items.frontend ? <Stack direction={{sm: "row", xs: "column"}} spacing={0}>
                             <Stack direction={"row"} minWidth={150} spacing={1}>
                                 <FaCheckSquare size={24} color='#1F4CA1'/>
                                 <Typography fontWeight={700} fontSize={18}>
@@ -185,10 +185,10 @@ export default function Portfolio() {
                                         sx={{wordBreak: "break-all"}}>
                                 {items.frontend}
                             </Typography>
-                        </Stack>) : null}
+                        </Stack> : null}
 
                         {/* backend */}
-                        {items.backend ? (<Stack direction={{sm: "row", xs: "column"}} spacing={0}>
+                        {items.backend ? <Stack direction={{sm: "row", xs: "column"}} spacing={0}>
                             <Stack direction={"row"} minWidth={150} spacing={1}>
                                 <FaCheckSquare size={24} color='#1F4CA1'/>
                                 <Typography fontWeight={700} fontSize={18}>
@@ -199,10 +199,10 @@ export default function Portfolio() {
                                         sx={{wordBreak: "break-all"}}>
                                 {items.backend}
                             </Typography>
-                        </Stack>) : null}
+                        </Stack> : null}
 
                         {/* database */}
-                        {items.database ? (<Stack direction={{sm: "row", xs: "column"}} spacing={0}>
+                        {items.database ? <Stack direction={{sm: "row", xs: "column"}} spacing={0}>
                             <Stack direction={"row"} minWidth={150} spacing={1}>
                                 <FaCheckSquare size={24} color='#1F4CA1'/>
                                 <Typography fontWeight={700} fontSize={18}>
@@ -213,10 +213,10 @@ export default function Portfolio() {
                                         sx={{wordBreak: "break-all"}}>
                                 {items.database}
                             </Typography>
-                        </Stack>) : null}
+                        </Stack> : null}
 
                         {/* Deployment */}
-                        {items.deployment ? (<Stack direction={{sm: "row", xs: "column"}} spacing={0}>
+                        {items.deployment ? <Stack direction={{sm: "row", xs: "column"}} spacing={0}>
                             <Stack direction={"row"} minWidth={150} spacing={1}>
                                 <FaCheckSquare size={24} color='#1F4CA1'/>
                                 <Typography fontWeight={700} fontSize={18}>
@@ -227,10 +227,10 @@ export default function Portfolio() {
                                         sx={{wordBreak: "break-all"}}>
                                 {items.deployment}
                             </Typography>
-                        </Stack>) : null}
+                        </Stack> : null}
 
                         {/* Github */}
-                        {items.githubUrl ? (<Stack direction={{sm: "row", xs: "column"}} spacing={0}>
+                        {items.githubUrl ? <Stack direction={{sm: "row", xs: "column"}} spacing={0}>
                             <Stack direction={"row"} minWidth={150} spacing={1}>
                                 <FaCheckSquare size={24} color='#1F4CA1'/>
                                 <Typography fontWeight={700} fontSize={18}>
@@ -244,11 +244,11 @@ export default function Portfolio() {
                                     GitHub
                                 </Typography>
                             </Link>
-                        </Stack>) : null}
+                        </Stack> : null}
 
                         <Stack direction={{md: "row", sm: "column"}} spacing={{md: 2, xs: 2}}>
                             {/* readMeUrl */}
-                            {items.readMeUrl ? (<Button
+                            {items.readMeUrl ? <Button
                                 href={items.readMeUrl}
                                 target='_blank'
                                 variant='contained'
@@ -271,9 +271,9 @@ export default function Portfolio() {
                                 <Typography fontSize={16} fontWeight={500}>
                                     README.md
                                 </Typography>
-                            </Button>) : null}
+                            </Button> : null}
                             {/* pptUrl */}
-                            {items.pptUrl ? (<Button
+                            {items.pptUrl ? <Button
                                 href={items.pptUrl}
                                 target='_blank'
                                 variant='contained'
@@ -296,7 +296,7 @@ export default function Portfolio() {
                                 <Typography fontSize={16} fontWeight={500}>
                                     프로젝트 PPT
                                 </Typography>
-                            </Button>) : null}
+                            </Button> : null}
                         </Stack>
                     </Stack>
                 </Grid>
@@ -304,25 +304,25 @@ export default function Portfolio() {
                 <Grid item lg={12} md={12} sm={12} xs={12} mt={2} pl={2} pr={2}>
                     <Divider/>
                     <Typography mt={2} fontSize={17} fontWeight={500} align='left'>
-                        {items.content1 ? items.content1.split("/").map((sentence, index) => (<span
+                        {items.content1 ? items.content1.split("/").map((sentence, index) => <span
                             key={index}
                             style={{
                                 fontWeight: index === 0 ? 700 : "inherit", // 첫 번째 문장에 대해서만 fontWeight를 높임
                             }}>
                       {sentence.trim()}{" "}
-                    </span>)) : null}
+                    </span>) : null}
                     </Typography>
                     <Typography mt={2} fontSize={17} fontWeight={500} align='left'>
-                        {items.content2 ? items.content2.split(" ").map((word, index) => (<span
+                        {items.content2 ? items.content2.split(" ").map((word, index) => <span
                             key={index}
                             style={{
                                 color: /[a-zA-Z]/.test(word) ? "#DB3D43" : "inherit", // 영어인 글자만 색상을 다르게 지정
                             }}>
                       {word}{" "}
-                    </span>)) : null}
+                    </span>) : null}
                     </Typography>
                 </Grid>
             </Grid>
         </Grid>
-    </Card>);
+    </Card>;
 }
